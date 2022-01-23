@@ -4,6 +4,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 
 import {Box} from '@mui/material'
 import First from './pages/sections/First';
+import Second from './pages/sections/Second';
 const App: React.FC =()=> {
   return (
     <Fragment>
@@ -11,6 +12,7 @@ const App: React.FC =()=> {
        <Box>    
        <Navbar/>
        <First/>
+       <Second/>
        </Box>
     </Fragment>
   );

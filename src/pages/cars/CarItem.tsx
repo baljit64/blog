@@ -1,17 +1,17 @@
 
 import { Card, CardMedia, CardContent, Typography, CardActionArea } from '@mui/material'
 
-
 interface IState {
     info: {
         img: string
         name: string
-        description: string
+        price: string
     }
 }
- function CardItem  ({info}:{info:IState["info"]}){
-    return <Card>
-        <CardActionArea>
+export default function CarItem({ info }: { info: IState["info"] }) {
+    return (
+        <Card>
+            <CardActionArea>
             <CardMedia component='img'
                 height='200px'
                 width='100%'
@@ -23,12 +23,11 @@ interface IState {
                     {info.name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                    {info.description}
+                    {info.price}
                 </Typography>
             </CardContent>
         </CardActionArea>
 
-
-    </Card>;
+  </Card >
+  );
 }
-export default CardItem

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Container,Grid ,Card, Typography} from '@mui/material'
+import { Box, Container,Grid , Typography} from '@mui/material'
 import CardItem from '../../components/CardItem';
 import data from '../../database/data.json'
 
